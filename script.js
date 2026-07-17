@@ -1,29 +1,18 @@
 
 /*
 FIRST ODIN JS Problem for Arrays
-let arr = [1, 2, 3, 4, 5];
-
-function sumOfTrtipledEvens(arr) {
-return arr
-	.filter((num) => num % 2 === 0)
-	.map((num) => num * 2).
-	.reduce((acc, cur) => acc + curr);
-}
-
 */
 
-let text = 'background-color';
-let text1 = 'list-style-image';
+let text = prompt('Write a word to camelize', 'background-word');
 
-
-//.map(modifyArray) 
 
 function camelize(word) {
     return word.split('-').map(modifyArray).join('');
 }
 
 function modifyArray(arrElement) {
-        if(text1.indexOf(arrElement) > 0) {
+        let textToModify = text;
+        if(textToModify.indexOf(arrElement) > 0) {
         let arrParts = arrElement.split('');
         arrParts[0] = arrParts[0].toUpperCase();
         return arrParts.join('');
@@ -32,17 +21,8 @@ function modifyArray(arrElement) {
     }
 }
 
-/*
-function modifyArray1(arrElement) {
-    let arrParts = arrElement.split('');
-    arrParts[0] = arrParts[0].toUpperCase();
-    return arrParts.join('');
-}
-*/
 
-//console.log(text);
-
-const modifiedText = camelize(text1);
+const modifiedText = camelize(text);
 
 console.log(modifiedText);
 
