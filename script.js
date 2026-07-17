@@ -12,17 +12,18 @@ return arr
 
 */
 
-let text = ['hola', 'mierda'];
+let text = 'background-color';
+let text1 = 'list-style-image';
 
 
 //.map(modifyArray) 
 
 function camelize(word) {
-    console.log(word.split('-').map(modifyArray).join(''));
+    return word.split('-').map(modifyArray).join('');
 }
 
 function modifyArray(arrElement) {
-        if(text.indexOf(arrElement) > 0) {
+        if(text1.indexOf(arrElement) > 0) {
         let arrParts = arrElement.split('');
         arrParts[0] = arrParts[0].toUpperCase();
         return arrParts.join('');
@@ -41,7 +42,7 @@ function modifyArray1(arrElement) {
 
 //console.log(text);
 
-const modifiedText = text.map(modifyArray);
+const modifiedText = camelize(text1);
 
 console.log(modifiedText);
 
