@@ -7,9 +7,6 @@ function filterRangeInPlace(arr, a, b) {
 }   
 
 
-
-//(ele >= a && ele <= b) arr.splice(indx)}
-
 filterRangeInPlace(arr, 1, 4);
 
 
