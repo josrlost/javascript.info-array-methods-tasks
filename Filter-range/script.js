@@ -10,4 +10,4 @@ let filtered = filterRange(arr, 1, 4);
 
 
 console.log(filtered);
-console.log(arr);
+
